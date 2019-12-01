@@ -3,6 +3,7 @@
 #define BOOST_TEST_MODULE allocator_test_module
 
 #include <boost/test/unit_test.hpp>
+#include <iostream>
 #include <functional>
 #include <ctime>
 /*#include <map>
