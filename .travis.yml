@@ -30,4 +30,4 @@ deploy:
     keep_history: true
     on:
       all_branches: true
-	  condition: $TRAVIS_BRANCH =~ ^(master|new-hierarchy)$
+      condition: $TRAVIS_BRANCH =~ ^(master|new-hierarchy)$
