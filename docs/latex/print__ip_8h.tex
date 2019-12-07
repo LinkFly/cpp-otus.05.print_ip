@@ -29,19 +29,13 @@ This graph shows which files directly or indirectly include this file\+:
 struct \hyperlink{structis__specialization__of}{is\+\_\+specialization\+\_\+of$<$ Template, T $>$}
 \item 
 struct \hyperlink{structis__specialization__of_3_01_template_00_01_template_3_01_args_8_8_8_01_4_01_4}{is\+\_\+specialization\+\_\+of$<$ Template, Template$<$ Args... $>$ $>$}
+\item 
+struct \hyperlink{struct_ip_printer_base}{Ip\+Printer\+Base$<$ Derived $>$}
+\item 
+class \hyperlink{class_ip_printer}{Ip\+Printer}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
-\item 
-{\footnotesize template$<$typename Iter $>$ }\\string \hyperlink{print__ip_8h_a3b476c2dc61542ef84e71de5981609a2}{print\+\_\+ip\+\_\+iterating} (Iter \&\&it, Iter \&\&it\+\_\+end)
-\item 
-{\footnotesize template$<$typename Container $>$ }\\string \hyperlink{print__ip_8h_a8fb0b98e1987c8163ab60996d9917af8}{print\+\_\+ip\+\_\+from\+\_\+container} (const Container \&collect, bool b\+\_\+reverse=false)
-\item 
-{\footnotesize template$<$typename T $>$ }\\string \hyperlink{print__ip_8h_a63fc2559a0607e50b8e32456daa33912}{print\+\_\+ip\+\_\+from\+\_\+numeric} (const T \&ip)
-\item 
-{\footnotesize template$<$typename For\+Check , int cur\+\_\+idx, typename... Args$>$ }\\void \hyperlink{print__ip_8h_adfb226ef8f95ce254b8de336a3e5331f}{print\+\_\+ip\+\_\+from\+\_\+tuple\+\_\+internal} (const std\+::tuple$<$ Args... $>$ \&ip, std\+::stringstream \&out)
-\item 
-{\footnotesize template$<$typename Arg , typename... Args$>$ }\\string \hyperlink{print__ip_8h_a21f69353d647854fa0b751bd7e0481eb}{print\+\_\+ip\+\_\+from\+\_\+tuple} (const std\+::tuple$<$ Arg, Args... $>$ \&ip)
 \item 
 {\footnotesize template$<$typename T $>$ }\\string \hyperlink{print__ip_8h_ae63874d29a9004ff5d4eaf4f7ca78393}{print\+\_\+ip} (const T \&ip)
 \end{DoxyCompactItemize}
@@ -70,7 +64,7 @@ struct \hyperlink{structis__specialization__of_3_01_template_00_01_template_3_01
 )}\hypertarget{print__ip_8h_ae63874d29a9004ff5d4eaf4f7ca78393}{}\label{print__ip_8h_ae63874d29a9004ff5d4eaf4f7ca78393}
 
 
-Definition at line 97 of file print\+\_\+ip.\+h.
+Definition at line 119 of file print\+\_\+ip.\+h.
 
 
 
@@ -79,7 +73,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{print__ip_8h_ae63874d29a9004ff5d4eaf4f7ca78393_cgraph}
+\includegraphics[width=276pt]{print__ip_8h_ae63874d29a9004ff5d4eaf4f7ca78393_cgraph}
 \end{center}
 \end{figure}
 
@@ -96,136 +90,6 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
-\index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!print\+\_\+ip\+\_\+from\+\_\+container@{print\+\_\+ip\+\_\+from\+\_\+container}}
-\index{print\+\_\+ip\+\_\+from\+\_\+container@{print\+\_\+ip\+\_\+from\+\_\+container}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
-\subsubsection[{\texorpdfstring{print\+\_\+ip\+\_\+from\+\_\+container(const Container \&collect, bool b\+\_\+reverse=false)}{print_ip_from_container(const Container &collect, bool b_reverse=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Container $>$ string print\+\_\+ip\+\_\+from\+\_\+container (
-\begin{DoxyParamCaption}
-\item[{const Container \&}]{collect, }
-\item[{bool}]{b\+\_\+reverse = {\ttfamily false}}
-\end{DoxyParamCaption}
-)}\hypertarget{print__ip_8h_a8fb0b98e1987c8163ab60996d9917af8}{}\label{print__ip_8h_a8fb0b98e1987c8163ab60996d9917af8}
-
-
-Definition at line 52 of file print\+\_\+ip.\+h.
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{print__ip_8h_a8fb0b98e1987c8163ab60996d9917af8_icgraph}
-\end{center}
-\end{figure}
-
-
-\index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!print\+\_\+ip\+\_\+from\+\_\+numeric@{print\+\_\+ip\+\_\+from\+\_\+numeric}}
-\index{print\+\_\+ip\+\_\+from\+\_\+numeric@{print\+\_\+ip\+\_\+from\+\_\+numeric}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
-\subsubsection[{\texorpdfstring{print\+\_\+ip\+\_\+from\+\_\+numeric(const T \&ip)}{print_ip_from_numeric(const T &ip)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ string print\+\_\+ip\+\_\+from\+\_\+numeric (
-\begin{DoxyParamCaption}
-\item[{const T \&}]{ip}
-\end{DoxyParamCaption}
-)}\hypertarget{print__ip_8h_a63fc2559a0607e50b8e32456daa33912}{}\label{print__ip_8h_a63fc2559a0607e50b8e32456daa33912}
-
-
-Definition at line 61 of file print\+\_\+ip.\+h.
-
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{print__ip_8h_a63fc2559a0607e50b8e32456daa33912_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{print__ip_8h_a63fc2559a0607e50b8e32456daa33912_icgraph}
-\end{center}
-\end{figure}
-
-
-\index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!print\+\_\+ip\+\_\+from\+\_\+tuple@{print\+\_\+ip\+\_\+from\+\_\+tuple}}
-\index{print\+\_\+ip\+\_\+from\+\_\+tuple@{print\+\_\+ip\+\_\+from\+\_\+tuple}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
-\subsubsection[{\texorpdfstring{print\+\_\+ip\+\_\+from\+\_\+tuple(const std\+::tuple$<$ Arg, Args... $>$ \&ip)}{print_ip_from_tuple(const std::tuple< Arg, Args... > &ip)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Arg , typename... Args$>$ string print\+\_\+ip\+\_\+from\+\_\+tuple (
-\begin{DoxyParamCaption}
-\item[{const std\+::tuple$<$ Arg, Args... $>$ \&}]{ip}
-\end{DoxyParamCaption}
-)}\hypertarget{print__ip_8h_a21f69353d647854fa0b751bd7e0481eb}{}\label{print__ip_8h_a21f69353d647854fa0b751bd7e0481eb}
-
-
-Definition at line 90 of file print\+\_\+ip.\+h.
-
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=334pt]{print__ip_8h_a21f69353d647854fa0b751bd7e0481eb_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{print__ip_8h_a21f69353d647854fa0b751bd7e0481eb_icgraph}
-\end{center}
-\end{figure}
-
-
-\index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!print\+\_\+ip\+\_\+from\+\_\+tuple\+\_\+internal@{print\+\_\+ip\+\_\+from\+\_\+tuple\+\_\+internal}}
-\index{print\+\_\+ip\+\_\+from\+\_\+tuple\+\_\+internal@{print\+\_\+ip\+\_\+from\+\_\+tuple\+\_\+internal}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
-\subsubsection[{\texorpdfstring{print\+\_\+ip\+\_\+from\+\_\+tuple\+\_\+internal(const std\+::tuple$<$ Args... $>$ \&ip, std\+::stringstream \&out)}{print_ip_from_tuple_internal(const std::tuple< Args... > &ip, std::stringstream &out)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename For\+Check , int cur\+\_\+idx, typename... Args$>$ void print\+\_\+ip\+\_\+from\+\_\+tuple\+\_\+internal (
-\begin{DoxyParamCaption}
-\item[{const std\+::tuple$<$ Args... $>$ \&}]{ip, }
-\item[{std\+::stringstream \&}]{out}
-\end{DoxyParamCaption}
-)}\hypertarget{print__ip_8h_adfb226ef8f95ce254b8de336a3e5331f}{}\label{print__ip_8h_adfb226ef8f95ce254b8de336a3e5331f}
-
-
-Definition at line 73 of file print\+\_\+ip.\+h.
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{print__ip_8h_adfb226ef8f95ce254b8de336a3e5331f_icgraph}
-\end{center}
-\end{figure}
-
-
-\index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!print\+\_\+ip\+\_\+iterating@{print\+\_\+ip\+\_\+iterating}}
-\index{print\+\_\+ip\+\_\+iterating@{print\+\_\+ip\+\_\+iterating}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
-\subsubsection[{\texorpdfstring{print\+\_\+ip\+\_\+iterating(\+Iter \&\&it, Iter \&\&it\+\_\+end)}{print_ip_iterating(Iter &&it, Iter &&it_end)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Iter $>$ string print\+\_\+ip\+\_\+iterating (
-\begin{DoxyParamCaption}
-\item[{Iter \&\&}]{it, }
-\item[{Iter \&\&}]{it\+\_\+end}
-\end{DoxyParamCaption}
-)}\hypertarget{print__ip_8h_a3b476c2dc61542ef84e71de5981609a2}{}\label{print__ip_8h_a3b476c2dc61542ef84e71de5981609a2}
-
-
-Definition at line 40 of file print\+\_\+ip.\+h.
-
 
 
 \subsection{Variable Documentation}
@@ -234,33 +98,33 @@ Definition at line 40 of file print\+\_\+ip.\+h.
 \subsubsection[{\texorpdfstring{is\+\_\+integral\+\_\+v}{is_integral_v}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty $>$ constexpr bool is\+\_\+integral\+\_\+v = std\+::is\+\_\+integral$<$\+\_\+\+Ty$>$\+::value}\hypertarget{print__ip_8h_a396e4b8c756441b942c1619de108e56a}{}\label{print__ip_8h_a396e4b8c756441b942c1619de108e56a}
 
 
-Definition at line 18 of file print\+\_\+ip.\+h.
+Definition at line 17 of file print\+\_\+ip.\+h.
 
 \index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!is\+\_\+list\+\_\+v@{is\+\_\+list\+\_\+v}}
 \index{is\+\_\+list\+\_\+v@{is\+\_\+list\+\_\+v}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
 \subsubsection[{\texorpdfstring{is\+\_\+list\+\_\+v}{is_list_v}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ constexpr bool is\+\_\+list\+\_\+v = {\bf is\+\_\+specialization\+\_\+of}$<$std\+::list, T$>$\+::value}\hypertarget{print__ip_8h_aba616383699ab0a96098de59a81b9c89}{}\label{print__ip_8h_aba616383699ab0a96098de59a81b9c89}
 
 
-Definition at line 36 of file print\+\_\+ip.\+h.
+Definition at line 35 of file print\+\_\+ip.\+h.
 
 \index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!is\+\_\+same\+\_\+v@{is\+\_\+same\+\_\+v}}
 \index{is\+\_\+same\+\_\+v@{is\+\_\+same\+\_\+v}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
 \subsubsection[{\texorpdfstring{is\+\_\+same\+\_\+v}{is_same_v}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty1 , class \+\_\+\+Ty2 $>$ constexpr bool is\+\_\+same\+\_\+v = std\+::is\+\_\+same$<$\+\_\+\+Ty1, \+\_\+\+Ty2$>$\+::value}\hypertarget{print__ip_8h_aa6c6bde5fd020a928e6d7b5fe8db7bb0}{}\label{print__ip_8h_aa6c6bde5fd020a928e6d7b5fe8db7bb0}
 
 
-Definition at line 21 of file print\+\_\+ip.\+h.
+Definition at line 20 of file print\+\_\+ip.\+h.
 
 \index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!is\+\_\+tuple\+\_\+v@{is\+\_\+tuple\+\_\+v}}
 \index{is\+\_\+tuple\+\_\+v@{is\+\_\+tuple\+\_\+v}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
 \subsubsection[{\texorpdfstring{is\+\_\+tuple\+\_\+v}{is_tuple_v}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ constexpr bool is\+\_\+tuple\+\_\+v = {\bf is\+\_\+specialization\+\_\+of}$<$std\+::tuple, T$>$\+::value}\hypertarget{print__ip_8h_a7f6f282ffeac81407489efbeee474dce}{}\label{print__ip_8h_a7f6f282ffeac81407489efbeee474dce}
 
 
-Definition at line 30 of file print\+\_\+ip.\+h.
+Definition at line 29 of file print\+\_\+ip.\+h.
 
 \index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!is\+\_\+vector\+\_\+v@{is\+\_\+vector\+\_\+v}}
 \index{is\+\_\+vector\+\_\+v@{is\+\_\+vector\+\_\+v}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
 \subsubsection[{\texorpdfstring{is\+\_\+vector\+\_\+v}{is_vector_v}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ constexpr bool is\+\_\+vector\+\_\+v = {\bf is\+\_\+specialization\+\_\+of}$<$std\+::vector, T$>$\+::value}\hypertarget{print__ip_8h_a4fbf025a5168661ab4054b8acf9221e9}{}\label{print__ip_8h_a4fbf025a5168661ab4054b8acf9221e9}
 
 
-Definition at line 33 of file print\+\_\+ip.\+h.
+Definition at line 32 of file print\+\_\+ip.\+h.
 
