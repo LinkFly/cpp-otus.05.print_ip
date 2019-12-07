@@ -1,0 +1,385 @@
+\hypertarget{tests_8cpp}{}\section{tests.\+cpp File Reference}
+\label{tests_8cpp}\index{tests.\+cpp@{tests.\+cpp}}
+{\ttfamily \#include \char`\"{}share.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$boost/test/unit\+\_\+test.\+hpp$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$tuple$>$}\\*
+{\ttfamily \#include \char`\"{}print\+\_\+ip.\+h\char`\"{}}\\*
+Include dependency graph for tests.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{tests_8cpp_a6b2a3852db8bb19ab6909bac01859985}{B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE}~allocator\+\_\+test\+\_\+module
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{tests_8cpp_aa077d5d13677e8627ef4bb67164ec979}{call\+\_\+test} (string name, std\+::function$<$ bool(void)$>$ fntest)
+\item 
+bool \hyperlink{tests_8cpp_a819cf6bf1d1705e50ca118e1b9185016}{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+char} ()
+\item 
+bool \hyperlink{tests_8cpp_ad947862d2313baa3355ad397472f963d}{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+short} ()
+\item 
+bool \hyperlink{tests_8cpp_a39d34ef8a0250c73cb3b6009e98adc39}{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+int} ()
+\item 
+bool \hyperlink{tests_8cpp_ab8e03bbc20567765d83c7ca439d1fc4e}{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+long\+\_\+long} ()
+\item 
+bool \hyperlink{tests_8cpp_aa9f9e2e14338ae5d9d01430fe949dc99}{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+string} ()
+\item 
+bool \hyperlink{tests_8cpp_a6603188be27664b95cf696eb246623a6}{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+vector} ()
+\item 
+bool \hyperlink{tests_8cpp_a638d1801c86c2c8c06dac2f61b290277}{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+list} ()
+\item 
+bool \hyperlink{tests_8cpp_a3445971afb7200d66b90472ad0460a81}{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+tuple} ()
+\item 
+\hyperlink{tests_8cpp_a70ab11e47ed9d11226eba2bfd0a40115}{B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE} (test\+\_\+of\+\_\+print\+\_\+ip)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{tests.\+cpp@{tests.\+cpp}!B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE}}
+\index{B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE}{BOOST_TEST_MODULE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE~allocator\+\_\+test\+\_\+module}\hypertarget{tests_8cpp_a6b2a3852db8bb19ab6909bac01859985}{}\label{tests_8cpp_a6b2a3852db8bb19ab6909bac01859985}
+
+
+Definition at line 3 of file tests.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\index{tests.\+cpp@{tests.\+cpp}!B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE@{B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE}}
+\index{B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE@{B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+S\+E(test\+\_\+of\+\_\+print\+\_\+ip)}{BOOST_AUTO_TEST_CASE(test_of_print_ip)}}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE (
+\begin{DoxyParamCaption}
+\item[{test\+\_\+of\+\_\+print\+\_\+ip}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a70ab11e47ed9d11226eba2bfd0a40115}{}\label{tests_8cpp_a70ab11e47ed9d11226eba2bfd0a40115}
+
+
+Definition at line 88 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a70ab11e47ed9d11226eba2bfd0a40115_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!call\+\_\+test@{call\+\_\+test}}
+\index{call\+\_\+test@{call\+\_\+test}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{call\+\_\+test(string name, std\+::function$<$ bool(void)$>$ fntest)}{call_test(string name, std::function< bool(void)> fntest)}}]{\setlength{\rightskip}{0pt plus 5cm}bool call\+\_\+test (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{std\+::function$<$ bool(void)$>$}]{fntest}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_aa077d5d13677e8627ef4bb67164ec979}{}\label{tests_8cpp_aa077d5d13677e8627ef4bb67164ec979}
+
+
+Definition at line 18 of file tests.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_aa077d5d13677e8627ef4bb67164ec979_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+char@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+char}}
+\index{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+char@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+char}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+char()}{test_print_ip__with_char()}}]{\setlength{\rightskip}{0pt plus 5cm}bool test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+char (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a819cf6bf1d1705e50ca118e1b9185016}{}\label{tests_8cpp_a819cf6bf1d1705e50ca118e1b9185016}
+
+
+Definition at line 29 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a819cf6bf1d1705e50ca118e1b9185016_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a819cf6bf1d1705e50ca118e1b9185016_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+int@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+int}}
+\index{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+int@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+int}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+int()}{test_print_ip__with_int()}}]{\setlength{\rightskip}{0pt plus 5cm}bool test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a39d34ef8a0250c73cb3b6009e98adc39}{}\label{tests_8cpp_a39d34ef8a0250c73cb3b6009e98adc39}
+
+
+Definition at line 41 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a39d34ef8a0250c73cb3b6009e98adc39_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a39d34ef8a0250c73cb3b6009e98adc39_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+list@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+list}}
+\index{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+list@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+list}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+list()}{test_print_ip__with_list()}}]{\setlength{\rightskip}{0pt plus 5cm}bool test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+list (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a638d1801c86c2c8c06dac2f61b290277}{}\label{tests_8cpp_a638d1801c86c2c8c06dac2f61b290277}
+
+
+Definition at line 65 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a638d1801c86c2c8c06dac2f61b290277_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a638d1801c86c2c8c06dac2f61b290277_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+long\+\_\+long@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+long\+\_\+long}}
+\index{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+long\+\_\+long@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+long\+\_\+long}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+long\+\_\+long()}{test_print_ip__with_long_long()}}]{\setlength{\rightskip}{0pt plus 5cm}bool test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+long\+\_\+long (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_ab8e03bbc20567765d83c7ca439d1fc4e}{}\label{tests_8cpp_ab8e03bbc20567765d83c7ca439d1fc4e}
+
+
+Definition at line 47 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_ab8e03bbc20567765d83c7ca439d1fc4e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_ab8e03bbc20567765d83c7ca439d1fc4e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+short@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+short}}
+\index{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+short@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+short}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+short()}{test_print_ip__with_short()}}]{\setlength{\rightskip}{0pt plus 5cm}bool test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+short (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_ad947862d2313baa3355ad397472f963d}{}\label{tests_8cpp_ad947862d2313baa3355ad397472f963d}
+
+
+Definition at line 35 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_ad947862d2313baa3355ad397472f963d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_ad947862d2313baa3355ad397472f963d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+string@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+string}}
+\index{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+string@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+string}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+string()}{test_print_ip__with_string()}}]{\setlength{\rightskip}{0pt plus 5cm}bool test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+string (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_aa9f9e2e14338ae5d9d01430fe949dc99}{}\label{tests_8cpp_aa9f9e2e14338ae5d9d01430fe949dc99}
+
+
+Definition at line 53 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_aa9f9e2e14338ae5d9d01430fe949dc99_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_aa9f9e2e14338ae5d9d01430fe949dc99_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+tuple@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+tuple}}
+\index{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+tuple@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+tuple}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+tuple()}{test_print_ip__with_tuple()}}]{\setlength{\rightskip}{0pt plus 5cm}bool test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+tuple (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a3445971afb7200d66b90472ad0460a81}{}\label{tests_8cpp_a3445971afb7200d66b90472ad0460a81}
+
+
+Definition at line 71 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a3445971afb7200d66b90472ad0460a81_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a3445971afb7200d66b90472ad0460a81_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+vector@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+vector}}
+\index{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+vector@{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+vector}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+vector()}{test_print_ip__with_vector()}}]{\setlength{\rightskip}{0pt plus 5cm}bool test\+\_\+print\+\_\+ip\+\_\+\+\_\+with\+\_\+vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a6603188be27664b95cf696eb246623a6}{}\label{tests_8cpp_a6603188be27664b95cf696eb246623a6}
+
+
+Definition at line 59 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a6603188be27664b95cf696eb246623a6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a6603188be27664b95cf696eb246623a6_icgraph}
+\end{center}
+\end{figure}
+
+
