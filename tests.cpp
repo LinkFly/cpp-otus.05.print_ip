@@ -6,8 +6,7 @@
 #include <iostream>
 #include <functional>
 #include <ctime>
-/*#include <map>
-#include <numeric>*/
+#include <tuple>
 
 #include "print_ip.h"
 
@@ -69,6 +68,12 @@ bool test_print_ip__with_list() {
 	});
 }
 
+bool test_print_ip__with_tuple() {
+	return call_test(__PRETTY_FUNCTION__, []() {
+		return std::string("1.2.3.4") == print_ip(std::tuple<int, int, int, int>{ 1, 2, 3, 4 });
+		});
+}
+
 //struct Init {
 //	Init(std::function<void()> init_func) {
 //		init_func();
@@ -89,6 +94,7 @@ BOOST_AUTO_TEST_CASE(test_of_print_ip)
 	BOOST_CHECK(test_print_ip__with_string());
 	BOOST_CHECK(test_print_ip__with_vector());
 	BOOST_CHECK(test_print_ip__with_list());
+	BOOST_CHECK(test_print_ip__with_tuple());
 }
 
 BOOST_AUTO_TEST_SUITE_END()

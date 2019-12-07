@@ -15,6 +15,7 @@ int main() {
 	cout << print_ip(string("123.45.67.89")) << endl;
 	cout << print_ip(std::vector<unsigned char>{67, 89, 101, 112}) << endl;
 	cout << print_ip(std::list<int>{ 101, 112, 131, 41 }) << endl;
+	cout << print_ip(std::tuple<int, int>{ 12, 13, 14, 15 }) << endl;
 
 	return 0;
 }
