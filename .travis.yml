@@ -23,8 +23,8 @@ script:
 - cmake --build .
 - cmake --build . --target tests
 - cmake --build . --target package
-#- ls "$PWD/Doxyfile"
-- doxygen ../Doxyfile
+- cd ..
+- doxygen ./Doxyfile
 
 deploy:
   - provider: script
