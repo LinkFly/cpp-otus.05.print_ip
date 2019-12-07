@@ -76,7 +76,7 @@ void print_ip_from_tuple_internal(const std::tuple<Args...>& ip, std::stringstre
 	}
 	else {
 		using CurType = decltype(std::get<cur_idx>(ip));
-		using PureCurType = typename std::remove_const<std::remove_reference<CurType>::type>::type;
+		using PureCurType = typename std::remove_const<typename std::remove_reference<CurType>::type>::type;
 		static_assert(is_same_v<ForCheck, PureCurType>, "Bad Type: all types in tuple must be same");
 		out << std::get<cur_idx>(ip);
 		if constexpr (cur_idx + 1 < sizeof...(Args)) {
