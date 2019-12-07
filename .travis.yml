@@ -29,4 +29,5 @@ deploy:
     github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     keep_history: true
     on:
-      branch: master
+      all_branches: true
+	  condition: $TRAVIS_BRANCH =~ ^(master|new-hierarchy)$

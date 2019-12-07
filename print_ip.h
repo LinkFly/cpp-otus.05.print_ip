@@ -54,7 +54,7 @@ struct  IpPrinterBase {
 };
 
 class IpPrinter : public IpPrinterBase<IpPrinter> {
-	friend class IpPrinterBase<IpPrinter>;
+	friend struct IpPrinterBase<IpPrinter>;
 
 	template<typename Iter>
 	string print_ip_iterating(Iter&& it, Iter&& it_end) {
