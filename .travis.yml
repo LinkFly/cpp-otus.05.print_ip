@@ -25,6 +25,7 @@ script:
 - cmake --build . --target package
 - cd ..
 - doxygen ./Doxyfile
+- cd build
 
 deploy:
   - provider: script
