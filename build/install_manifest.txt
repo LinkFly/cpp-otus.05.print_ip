@@ -1,0 +1,2 @@
+/usr/bin/print_ip
+/usr/lib/print_ip/tests/tests

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/travis/build/LinkFly/cpp-otus.05.print_ip/main.cpp
+share.h
+/home/travis/build/LinkFly/cpp-otus.05.print_ip/share.h
+iostream
+-
+print_ip.h
+/home/travis/build/LinkFly/cpp-otus.05.print_ip/print_ip.h
+
+/home/travis/build/LinkFly/cpp-otus.05.print_ip/print_ip.h
+share.h
+/home/travis/build/LinkFly/cpp-otus.05.print_ip/share.h
+vector
+-
+string
+-
+sstream
+-
+array
+-
+list
+-
+tuple
+-
+sstream
+-
+
+/home/travis/build/LinkFly/cpp-otus.05.print_ip/share.h
+
